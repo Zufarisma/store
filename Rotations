@@ -7,7 +7,7 @@ PickaxeWorld = string.upper(PickaxeWorld)
 PickaxeWorldID = string.upper(PickaxeWorldID)
 bot.collect_range=4
 bot.auto_collect = false
-function GonWebhook(Emazet)
+function GonWebhook(Shinuqi)
     local script = [[
     $webHookUrl = "]]..WebhookUrl..[["
     $thumbnailObject = [PSCustomObject]@{
@@ -20,7 +20,6 @@ function GonWebhook(Emazet)
     $footer = [PSCustomObject]@{
         icon_url = "https://cdn.discordapp.com/attachments/1146856489856798740/1146991741648515163/standard_1.gif?size=96&quality=lossless"
         text = "]].."Emazet | Date : "..(os.date"%d/%m/%y":upper().." Time : ")..os.date("%I")..":"..os.date("%M").." "..os.date("%p"):upper()..[["
-        text = "Emazet Store <a:arrow:1146856274408001697> https://discord.gg/m43RGEC3Du "
     }
   
     $embedObject = [PSCustomObject]@{
